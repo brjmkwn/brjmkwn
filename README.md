@@ -1,7 +1,7 @@
 # Hi, I'm Brij Makwana 👋
 
 ### **AI Systems & Backend Infrastructure Engineer**
-Building high-throughput LLM inference systems, deterministic constrained-decoding gateways, and sandboxed code execution infrastructure.
+Architecting production Model Context Protocol (MCP) gateways, high-throughput LLM inference systems, deterministic grammar-constrained decoding proxies, and hermetic containerized evaluation sandboxes.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Brij%20Makwana-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/brij-makwana-51506b250/)
 [![Email](https://img.shields.io/badge/Email-brijmakwana6%40gmail.com-D14836?style=flat-square&logo=gmail)](mailto:brijmakwana6@gmail.com)
@@ -9,24 +9,25 @@ Building high-throughput LLM inference systems, deterministic constrained-decodi
 
 ---
 
-### 🚀 Flagship AI Infrastructure Projects
+### 🚀 Flagship AI Systems Projects
 
-| Project | Stack | Key Architectural Metric | Repo Link |
+| Project | Stack & Architecture | Key Measured Metric | Repository |
 |---|---|---|---|
-| **Speculative Decoding Inference Proxy** | `FastAPI`, `PyTorch`, `Docker`, `Prometheus` | **2.4x generation speedup**, KV-cache sync, 72.4% draft acceptance rate | [🔗 Code](https://github.com/brjmkwn/speculative-inference-proxy) |
-| **FSM Grammar-Constrained Firewall** | `Python`, `FastAPI`, `PyTorch`, `Interegular` | **100.0% schema validity (0 syntax errors)**, $<1.5$ms DFA logit masking | [🔗 Code](https://github.com/brjmkwn/grammar-constrained-firewall) |
-| **Micro-Container SWE-Bench Harness** | `Docker SDK`, `FastAPI`, `Linux Cgroups` | **$<150$ms ephemeral sandboxes**, kernel security isolation, SSE streaming | [🔗 Code](https://github.com/brjmkwn/swe-bench-verification-harness) |
-| **Distributed Semantic Caching Gateway** | `FastAPI`, `Qdrant`, `Redis`, `HNSW` | **35% LLM API cost reduction**, sub-20ms p99 cache hits, 3072-dim vectors | [🔗 Code](https://github.com/brjmkwn/semantic-cache-vector-gateway) |
+| **[mcp-control-plane](https://github.com/brjmkwn/mcp-control-plane)** | `Python`, `FastAPI`, `Streamable HTTP`, `SQLGlot`, `Redis`, `Terraform` | **Zero-Trust MCP Gateway** with SQL AST guardrails, scoped RBAC, 2-step HMAC write gate, 13 production tools & AWS serverless IaC | [🔗 Code](https://github.com/brjmkwn/mcp-control-plane) |
+| **[swe-bench-verification-harness](https://github.com/brjmkwn/swe-bench-verification-harness)** | `Docker SDK`, `FastAPI`, `Linux Cgroups`, `SSE`, `Prometheus` | **88.1 ms P95** warm pool allocation, hermetic isolation (`--network none`, `cap_drop=ALL`), real-time SSE streaming | [🔗 Code](https://github.com/brjmkwn/swe-bench-verification-harness) |
+| **[grammar-constrained-firewall](https://github.com/brjmkwn/grammar-constrained-firewall)** | `Python`, `FastAPI`, `PyTorch`, `interegular`, `DFAs` | **100.0% schema validity**, **1.34 ms/token P95** request time, logit masking to $-\infty$, zero retry overhead | [🔗 Code](https://github.com/brjmkwn/grammar-constrained-firewall) |
+| **[speculative-inference-proxy](https://github.com/brjmkwn/speculative-inference-proxy)** | `PyTorch (CUDA)`, `FastAPI`, `Transformers`, `A100-SXM4` | **2.61x generation speedup** on A100 (34.7 $\to$ 90.7 t/s), **77.4% draft acceptance**, ITL reduced to 11.1ms | [🔗 Code](https://github.com/brjmkwn/speculative-inference-proxy) |
+| **[semantic-cache-vector-gateway](https://github.com/brjmkwn/semantic-cache-vector-gateway)** | `FastAPI`, `Qdrant (Rust)`, `text-embedding-3-large`, `HNSW` | **3,072-dimensional vector search**, payload pre-filtering in HNSW graph, NVMe memory-mapped storage (Mmap) | [🔗 Code](https://github.com/brjmkwn/semantic-cache-vector-gateway) |
 
 ---
 
 ### 🛠️ Technical Primitives & Stack
 
-* **Languages:** Python (`FastAPI`, `Asyncio`, `PyTorch`, `Pydantic`, `Pandas`, `NumPy`), Java, SQL (`PostgreSQL`), Bash
-* **AI & Inference Systems:** Speculative Decoding, KV-Cache Optimization, FSM Logit Masking (`Interegular`), Semantic Caching
-* **Systems & Infrastructure:** Docker (`Cgroups`, Rootless Sandboxing), Qdrant Vector DB, Redis, Prometheus Telemetry, SSE Streaming
-* **Core CS Fundamentals:** Data Structures & Algorithms, Distributed Systems, Operating Systems, Systems Architecture
+* **Languages:** Python (`FastAPI`, `Asyncio`, `PyTorch`, `Pydantic v2`, `NumPy`), SQL (`PostgreSQL`, `pgvector`), Bash
+* **AI & Agent Infrastructure:** Model Context Protocol (MCP), Speculative Decoding, Deterministic FSM Logit Masking (`interegular`), Semantic Caching, HNSW Vector Search
+* **Systems, Security & Cloud:** Linux Kernel Sandboxing (Rootless Docker, Cgroups), Redis (Sliding-Window Rate Limiting), Qdrant Vector DB, AWS Serverless IaC (Terraform, Lambda, API Gateway), Prometheus Telemetry, Server-Sent Events (SSE)
+* **Core CS Fundamentals:** Data Structures & Algorithms, Distributed Systems, Operating Systems, Compilers & Automata
 
 ---
 
-📫 **Get in Touch:** [brijmakwana6@gmail.com](mailto:brijmakwana6@gmail.com)
+📬 **Contact:** [brijmakwana6@gmail.com](mailto:brijmakwana6@gmail.com) | [LinkedIn](https://www.linkedin.com/in/brij-makwana-51506b250/)
