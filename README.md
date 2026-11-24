@@ -11,12 +11,12 @@ Architecting production Model Context Protocol (MCP) gateways, high-throughput L
 
 ### 🚀 Flagship AI Systems Projects
 
-| Project | Stack & Architecture | Key Measured Metric | Repository |
+| Project | Stack & Architecture | Architectural Primitives & Measured Metrics | Repository |
 |---|---|---|---|
 | **[mcp-control-plane](https://github.com/brjmkwn/mcp-control-plane)** | `Python`, `FastAPI`, `Streamable HTTP`, `SQLGlot`, `Redis`, `Terraform` | **Zero-Trust MCP Gateway** with SQL AST guardrails, scoped RBAC, 2-step HMAC write gate, 13 production tools & AWS serverless IaC | [🔗 Code](https://github.com/brjmkwn/mcp-control-plane) |
-| **[swe-bench-verification-harness](https://github.com/brjmkwn/swe-bench-verification-harness)** | `Docker SDK`, `FastAPI`, `Linux Cgroups`, `SSE`, `Prometheus` | **88.1 ms P95** warm pool allocation, hermetic isolation (`--network none`, `cap_drop=ALL`), real-time SSE streaming | [🔗 Code](https://github.com/brjmkwn/swe-bench-verification-harness) |
+| **[swe-bench-verification-harness](https://github.com/brjmkwn/swe-bench-verification-harness)** | `Docker SDK`, `FastAPI`, `Linux Cgroups`, `SSE`, `Prometheus` | **88.1 ms P95** warm pool allocation, hermetic security isolation (`--network none`, `cap_drop=ALL`), real-time SSE streaming | [🔗 Code](https://github.com/brjmkwn/swe-bench-verification-harness) |
 | **[grammar-constrained-firewall](https://github.com/brjmkwn/grammar-constrained-firewall)** | `Python`, `FastAPI`, `PyTorch`, `interegular`, `DFAs` | **100.0% schema validity**, **1.34 ms/token P95** request time, logit masking to $-\infty$, zero retry overhead | [🔗 Code](https://github.com/brjmkwn/grammar-constrained-firewall) |
-| **[speculative-inference-proxy](https://github.com/brjmkwn/speculative-inference-proxy)** | `PyTorch (CUDA)`, `FastAPI`, `Transformers`, `A100-SXM4` | **2.61x generation speedup** on A100 (34.7 $\to$ 90.7 t/s), **77.4% draft acceptance**, ITL reduced to 11.1ms | [🔗 Code](https://github.com/brjmkwn/speculative-inference-proxy) |
+| **[speculative-inference-proxy](https://github.com/brjmkwn/speculative-inference-proxy)** | `PyTorch`, `FastAPI`, `Transformers`, `CUDA` | **OpenAI-compatible speculative decoding proxy** pairing draft & target models with unbiased rejection sampling, dynamic KV-cache sync, and Prometheus telemetry | [🔗 Code](https://github.com/brjmkwn/speculative-inference-proxy) |
 | **[semantic-cache-vector-gateway](https://github.com/brjmkwn/semantic-cache-vector-gateway)** | `FastAPI`, `Qdrant (Rust)`, `text-embedding-3-large`, `HNSW` | **3,072-dimensional vector search**, payload pre-filtering in HNSW graph, NVMe memory-mapped storage (Mmap) | [🔗 Code](https://github.com/brjmkwn/semantic-cache-vector-gateway) |
 
 ---
